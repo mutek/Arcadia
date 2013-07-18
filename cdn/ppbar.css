@@ -1,0 +1,56 @@
+@charset "UTF-8";
+#toolbar{
+	background: black;
+	color: #ff8c00;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:18px; /* dimensionamento assoluto invece che relativo per mantenere consistenza cross-site */
+	}
+#toolbar *{
+	margin:0;
+	padding:0;
+}
+#toolbar ul li{
+	display:inline;
+	list-style-type:none;
+	margin:auto 1ex;
+}
+#toolbar ul li, #toolbar ul, #toolbar a{
+	vertical-align: top;
+}
+#toolbar .sites{
+	position: absolute;
+	top:2px;
+	left:0;
+}
+/* qualcosa da allineare a destra?
+.sso{
+	position:absolute;
+	top:0;
+	right:0;
+	font-size:10px;
+}
+.sso input{
+	height:12px;margin:0; padding:0;
+}
+*/
+#toolbar a{text-decoration:none;color:#ff8c00;}
+#toolbar a:hover{color:black;background-color:#ff8c00;}
+#toolbar a.icon{text-decoration:none;background-color:transparent;}
+#toolbar a.icon:hover{color:black;background-color:transparent;}
+#toolbar a.icon img{
+	height: 18px;
+	margin:0;padding:0;
+	position:relative;
+	top:-2px;
+}
+hr{
+	display:none;
+}
+@media print {
+#toolbar{display:none}
+}
